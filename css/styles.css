@@ -867,19 +867,16 @@ input.form-list {
 
 .form-pact {
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   margin-bottom: 30px;
-  padding-right: 11px;
-
-  text-align: right;
 }
 
 .check-icon-off {
-  position: absolute;
-  top: 3px;
-  left: 12px;
-
   display: block;
+  margin-right: 7px;
   width: 16px;
   height: 15px;
 
@@ -893,9 +890,7 @@ input.form-list {
 
 .check-icon {
   display: none;
-  position: absolute;
-  top: 3px;
-  left: 12px;
+  margin-right: 7px;
 
   background-color: var(--hover-color);
   border-radius: 2px;
@@ -906,7 +901,7 @@ input.form-list {
 }
 
 .form-checkbox:checked ~ .check-icon-off {
-  border: 2px solid transparent;
+  display: none;
 }
 
 .modal-btn:hover,
